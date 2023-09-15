@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Character Type Checker</title>
+</head>
+
+<body>
+    <script>
+        /*
+                //Question 1
+                                                                                                  
+                //Number
+                var userinput = prompt("Enter a Number or String");
+                if (!isNaN(userinput)) {
+                document.write(userinput + " is a Number:");
+                                                                                                                                                        else {
+                var charcode = userinput.charCodeAt(0);
+                if (charcode >= 65 && charcode <= 90) {
+                      document.write(userinput + " is a Uppercase Letter:");
+                 }
+                //Lowercase Latter
+                else if (charcode >= 97 && charcode <= 122) {
+                document.write(userinput + " is a Lowercase Letter:");
+                }
+                // If it's none of the above
+                else {    document.write(userinput + " is not a letter:")
+                } }*/
+
+        //Question 2
+
+        /*//First Integer
+        var num1 = parseInt(prompt("Enter a First Number : "))
+        var num2 = parseInt(prompt("Enter a Second Number : "))
+
+        if (num1 === num2) {
+            alert("Both Number is same");
+        } else if (num1 > num2) {
+            alert("Number 1 Integer is grater than Num 2")
+        } else {
+            alert("Number 2 Integer is grater than Num 1")
+        }*/
+
+        //Question 3
+
+        /*//Integer
+        var num = parseInt(prompt("Enter a Number : "))
+
+        if (num >= 0) {
+            alert("The Number is Positive");
+        } else {
+            alert("The Number is Negative")
+        } */
+
+        //Question 4
+
+        /*//Character
+        var charInput = parseInt(prompt("Enter a Character : "));
+        if (!isNaN(charInput)) {
+            charInput = String.fromCharCode(charInput);
+
+            var isVowel = charInput === 'a' || charInput === 'e' || charInput === 'i' || charInput === 'o' || charInput === 'u';
+
+            if (isVowel) {
+                alert("This Character is a Vowel");
+            } else {
+                alert("This Character is Not a Vowel");
+            }
+        }
+        */
+
+        /*
+
+        //Question 5
+
+        var correctpassword = "Owais";
+
+        var userpassword = prompt("Enter a Password");
+
+        if (!userpassword) {
+            alert("Enter a Password");
+
+        } else if (userpassword === correctpassword) {
+            alert("This is a Correct Password");
+
+        } else {
+            alert("This is  InCorrect Password");
+        } */
+
+        /*
+
+                //Question 6
+                //This if/else statement does not work. Try to fix it:
+                var greeting = prompt("Enter a Number");
+                var hour = 13;
+                if (greeting < 18) {
+                    alert("Good day");
+                } else {
+                    alert("Good evening");
+                }*/
+
+        /*//Question 7
+        var number = prompt("Enter a Time");
+        var time = parseInt(number);
+        if (!isNaN(time)) {
+            if (time >= 0 && time < 1200) {
+                alert("Good Morning");
+            } else if (time >= 1200 && time < 1700) {
+                alert("Good Afternoon");
+            } else if (time >= 1700 && time < 2100) {
+                alert("Good Evining");
+            } else if (time >= 2100 && time < 2359) {
+                alert("Good Night");
+            } else {
+                alert("Please Enter a Valid Time")
+            }
+        }*/
+
+        //Array Chapter 13-15
+
+        /*
+              //Question 1 = Declare an empty array using JS literal notation to store student names
+              studentName.push("Owais");
+              studentName.push("Raza");
+              */
+        /*
+              //Question 2 = Declare an empty array using JS object notation to store student names
+              var studentNames = ("Owais");
+              document.write(studentNames);
+              */
+        /*
+              //Question 3 = Declare and initialize a strings array.
+              var color = ["red", "yellow", "Green"]
+          document.write(color[0] + color[1]);
+
+          */
+        /*
+          //Question 4 = Declare and initialize a numbers array
+              var number = ["1", "2", "3"];
+              document.write(number[0] + "<br>");
+              document.write(number[1] + "<br>");
+              document.write(number[2] + "<br>");
+              */
+        /*
+              //Question 5 = Declare and initialize a boolean array.
+              var YesorNo = ["true", "flase", "true", "true", "false", "true"];
+              document.write(YesorNo[0] + "<br>");
+              document.write(YesorNo[1] + "<br>");
+              document.write(YesorNo[2] + "<br>");
+              document.write(YesorNo[3] + "<br>");
+              */
+        /*
+              //Question 6 = Declare and initialize a mixed array.
+              var mixedarray = ["1", "Owais", "true", "age=19", "yellow", "red"];
+              document.write(mixedarray[0] + "<br>");
+              document.write(mixedarray[1] + "<br>");
+              document.write(mixedarray[2] + "<br>");
+              document.write(mixedarray[3] + "<br>");
+              document.write(mixedarray[4] + "<br>");
+              document.write(mixedarray[5] + "<br>");
+              */
+        /*
+              //Question 7 = Declare  Initialize an array and store available education qualifications in Pakistan
+              // (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD).
+
+              var education = ["Qualification", "SSC", "HSC", "BCS", "BS", "BCOM", "MS", " PhD"];
+              document.write(education[0] + "<br>");
+              document.write(education[1] + "<br>");
+              document.write(education[2] + "<br>");
+              document.write(education[3] + "<br>");
+              document.write(education[4] + "<br>");
+              document.write(education[5] + "<br>");
+              document.write(education[6] + "<br>");
+              document.write(education[7] + "<br>");
+             
+              */
+        /*
+              //Question 8 = Declare
+
+              var StudentName = ["Owais", "Raza", "Ahmed"];
+              var StudentMarks = [420, 400, 450];
+              var totalmarks = 500;
+              var Studentpercentage = [];
+
+              for (var i = 0; i < StudentMarks.length; i++) {
+                  var percentage = (StudentMarks[i] / totalmarks) * 100;
+                  Studentpercentage.push(percentage)
+              }
+              for (var i = 0; i < studentNames.length; i++) {
+                  document.write("StudentName" + StudentName + "<br>");
+                  document.write("Score:" + StudentMarks + "<br>");
+                  document.write("percentage:" + Studentpercentage + "<br>");
+             
+              }
+        */
+        /*
+        //Question 9 = Declare
+        // Initialize an array with color names
+        var colors = ["red", "green", "blue"];
+
+        // Display the original array
+        document.write("Original Array:", colors);
+
+        // a. Ask the user to add a color to the beginning of the array
+        var colorToAddAtStart = prompt("Enter a color to add to the beginning:");
+        colors.unshift(colorToAddAtStart);
+
+        // Display the updated array
+        document.write("Array after adding at the beginning:", colors);
+
+        // b. Ask the user to add a color to the end of the array
+        var colorToAddAtEnd = prompt("Enter a color to add to the end:");
+        colors.push(colorToAddAtEnd);
+
+        // Display the updated array
+        document.write("Array after adding at the end:", colors);
+
+        // c. Add two more colors to the beginning of the array
+        colors.unshift("purple", "orange");
+
+        // Display the updated array
+        document.write("Array after adding two colors at the beginning:", colors);
+
+        // d. Delete the first color in the array
+        colors.shift();
+
+        // Display the updated array
+        document.write("Array after deleting the first color:", colors);
+
+        // e. Delete the last color in the array
+        colors.pop();
+
+        // Display the updated array
+        document.write("Array after deleting the last color:", colors);
+
+        // f. Ask the user to add a color at a specific index
+        var indexToAddColor = parseInt(prompt("Enter the index to add a color:"));
+        var colorToAddAtIndex = prompt("Enter the color to add at the index:");
+        colors.splice(indexToAddColor, 0, colorToAddAtIndex);
+
+        // Display the updated array
+        document.write("Array after adding a color at a specific index:", colors);
+
+        // g. Ask the user to delete colors at a specific index and count
+        var indexToDelete = parseInt(prompt("Enter the index to start deletion:"));
+        var countToDelete = parseInt(prompt("Enter the number of colors to delete:"));
+        colors.splice(indexToDelete, countToDelete);
+
+        // Display the final updated array
+        document.write("Final Array after deletion:", colors);
+
+        //Question 10 = Declare
+        // Array to store student scores
+        var studentScores = [78, 92, 85, 67, 91, 88];
+
+        // Sort the array in ascending order
+        studentScores.sort(function(a, b) {
+            return a - b;
+        });
+
+        // Display the sorted array
+        document.write("Sorted Student Scores (Ascending Order):", studentScores);
+*/
+        /*
+        //Question 11 = Declare
+        // Initialize an array with city names
+        var cities = ["New York", "London", "Paris", "Tokyo", "Sydney"];
+
+        // Create a new array to store selected cities
+        var selectedCities = [];
+
+        // Copy three array elements from cities to selectedCities
+        selectedCities.push(cities[0], cities[1], cities[2]);
+
+        // Display the selectedCities array
+        document.write("Selected Cities:", selectedCities);
+        */
+
+        /*
+        //Question 12 = Declare
+        // Array of strings
+        var arr = ["This", "is", "my", "cat"];
+
+        // Use the join method to create a single string
+        var singleString = arr.join(" ");
+
+        // Display the single string
+        document.write("Single String:", singleString);
+        */
+
+        /*
+        //Question 13 = Declare
+        // Create a new empty array
+        var fifoArray = [];
+
+        // Add values to the array using the push method (FIFO)
+        fifoArray.push("Value 1");
+        fifoArray.push("Value 2");
+        fifoArray.push("Value 3");
+
+        // Access and remove values from the array using the shift method (FIFO)
+        var firstValue = fifoArray.shift();
+        var secondValue = fifoArray.shift();
+        var thirdValue = fifoArray.shift();
+
+        // Display the values in the order they were stored
+        document.write("First Value:", firstValue);
+        document.write("Second Value:", secondValue);
+        document.write("Third Value:", thirdValue);
+        */
+
+        /*
+        //Question 14 = Declare
+        // Create a new empty array
+        var lifoArray = [];
+
+        // Add values to the array using the push method (LIFO)
+        lifoArray.push("Value 1");
+        lifoArray.push("Value 2");
+        lifoArray.push("Value 3");
+
+        // Access and remove values from the array using the pop method (LIFO)
+        var lastValue = lifoArray.pop();
+        var secondLastValue = lifoArray.pop();
+        var thirdLastValue = lifoArray.pop();
+
+        // Display the values in reverse order
+        document.write("Last Value:", lastValue);
+        document.write("Second Last Value:", secondLastValue);
+        document.write("Third Last Value:", thirdLastValue);
+        */
+
+        /*
+        //Question 15 = Declare
+        // Array of phone manufacturers
+        var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+        // Create the HTML dropdown/select menu using document.write()
+        document.write("<select id='manufacturerSelect'>");
+
+        // Loop through the manufacturers array to generate the options
+        for (var i = 0; i < phoneManufacturers.length; i++) {
+            document.write("<option value='" + phoneManufacturers[i] + "'>" + phoneManufacturers[i] + "</option>");
+        }
+
+        document.write("</select>");
+        */
+    </script>
+
+</body>
+
+</html>
